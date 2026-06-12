@@ -116,7 +116,25 @@ Evaluate:
 * Scalability requirements
 * Observability requirements
 * Security requirements
+* Resilience requirements
+* Recovery strategies
+* Retry strategies
+* Circuit breaking opportunities
 
 Avoid coupling systems unnecessarily.
 
 Design for evolution, not only for current requirements.
+
+# Business Alignment
+
+Every recommendation must consider:
+
+- Business value
+- User impact
+- Delivery time
+- Return on investment
+- Operational sustainability
+
+Technology decisions must support business outcomes.
+
+Avoid technical complexity that does not create measurable value.
