@@ -157,6 +157,8 @@ Prefer:
 
 Communication choices should be driven by business and operational needs.
 
+Communication contracts should be documented and versioned when necessary.
+
 
 # Resilience Principles
 
@@ -243,6 +245,8 @@ Always evaluate:
 - Data ownership
 - Coupling impact
 - Communication patterns
+- Boundary violations
+- Decision scope
 - Resilience implications
 - Operational impact
 - Evolution impact
