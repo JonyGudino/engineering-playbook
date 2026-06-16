@@ -5,23 +5,29 @@
 
 3. Domain Ownership
 
-4. Separation of Concerns
+4. Operational Ownership
 
-5. Modularity Principles
+5. Separation of Concerns
 
-6. Data Ownership Principles
+6. Modularity Principles
 
-7. Coupling Principles
+7. Data Ownership Principles
 
-8. Communication Principles
+8. Coupling Principles
 
-9. Resilience Principles
+9. Communication Principles
 
-10. Evolution Principles
+10. Resilience Principles
 
-11. Governance Principles
+11. Evolution Principles
 
-12. AI Requirements
+12. Governance Principles
+
+13. Architectural Decision Scope
+
+14. Architectural Boundaries
+
+15. AI Requirements
  -->
 
 # Purpose
@@ -69,6 +75,21 @@ Ownership includes:
 Avoid shared ownership whenever possible.
 
 Clear ownership reduces ambiguity and accelerates decision-making.
+
+
+# Operational Ownership
+
+Teams that build services should own their operation.
+
+Ownership includes:
+
+- Monitoring
+- Alerting
+- Incident response
+- Maintenance
+- Capacity planning
+
+Operational responsibility should remain close to implementation ownership.
 
 
 # Separation of Concerns
@@ -157,6 +178,7 @@ Architecture should support continuous evolution.
 
 Prefer:
 
+- Evolution over replacement
 - Incremental improvements
 - Backward compatibility
 - Controlled migrations
@@ -180,6 +202,35 @@ Architectural decisions should follow:
 Significant architectural decisions must be documented.
 
 Architecture should be intentional, not accidental.
+
+
+# Architectural Decision Scope
+
+Architectural decisions should be evaluated according to their impact scope.
+
+Scopes include:
+
+- Component Level
+- Service Level
+- Domain Level
+- Platform Level
+
+Higher impact decisions require stronger justification and ADR documentation.
+
+
+# Architectural Boundaries
+
+Architectural boundaries must be explicit.
+
+Services should communicate through defined contracts.
+
+Avoid:
+
+- Shared internal implementations
+- Cross-domain business logic
+- Direct database access across domains
+
+Boundaries protect system autonomy and maintainability.
 
 
 # AI Requirements
