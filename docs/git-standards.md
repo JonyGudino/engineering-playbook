@@ -118,6 +118,82 @@ Preferred Emojis:
 ⬆️ deps     -> Dependency upgrades
 
 
+# Pull Request Standards
+
+Every Pull Request must:
+
+- Have a clear title
+- Reference the related feature or issue
+- Explain the purpose of the change
+- Describe implementation details
+- Describe testing performed
+
+Pull Requests should remain focused on a single concern.
+
+Avoid large Pull Requests whenever possible.
+
+# Definition of Done
+
+A task is considered complete when:
+
+- Code is implemented
+- Tests are passing
+- Code review completed
+- Documentation updated when necessary
+- No critical issues remain
+- Branch merged successfully
+
+Done does not mean code exists.
+
+Done means the change is production-ready.
+
+
+# Hotfix Strategy
+
+Hotfixes are reserved for production issues.
+
+Flow:
+
+hotfix/*
+↓
+main
+↓
+develop
+
+Every hotfix must:
+
+- Identify root cause
+- Include validation steps
+- Be merged back into develop
+
+Avoid using hotfixes for unfinished work.
+
+
+# Release Strategy
+
+Releases are managed through Git Tags.
+
+Format:
+
+vMAJOR.MINOR.PATCH
+
+Examples:
+
+v1.0.0
+v1.2.0
+v1.2.5
+
+Guidelines:
+
+- MAJOR for breaking changes
+- MINOR for new features
+- PATCH for bug fixes
+
+Every production deployment should be associated with a Git Tag.
+
+Tags represent the official release history.
+
+
 # AI Requirements
 
 When proposing changes, always provide:
