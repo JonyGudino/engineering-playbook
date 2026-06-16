@@ -37,13 +37,15 @@ Every significant decision should be explainable and repeatable.
 
 Prioritize:
 
-1. Simplicity
-2. Maintainability
-3. Reliability
-4. Security
-5. Scalability
-6. Cost Efficiency
-7. Business Value
+1. Business Value
+2. User Value
+3. Maintainability
+4. Reliability
+5. Security
+6. Scalability
+7. Cost Efficiency
+8. Technical Excellence
+9. Simplicity
 
 Avoid:
 
@@ -52,7 +54,17 @@ Avoid:
 - Premature optimization
 - Unnecessary complexity
 
-Choose the simplest solution that satisfies the requirements.
+Choose the solution that provides the best balance between:
+
+- Business Value
+- Technical Excellence
+- Scalability
+- Maintainability
+- Security
+- Cost
+- Delivery Speed
+
+Simplicity is preferred when it does not compromise long-term objectives.
 
 
 
@@ -83,7 +95,9 @@ Every significant alternative should be evaluated using:
 - Security
 - Operational Impact
 - Cost
-- Team Knowledge
+- Current Team Capability
+- Learning Curve
+- Strategic Skill Growth
 - Future Flexibility
 
 Avoid evaluating only technical aspects.
@@ -178,3 +192,19 @@ For significant decisions provide:
 - Validation Criteria
 
 Recommend ADR creation when appropriate.
+
+
+# Future State Thinking
+
+Evaluate not only the current requirements but also:
+
+- Expected growth
+- Future scale
+- Future operational needs
+- Future integrations
+- Team evolution
+- Product evolution
+
+Avoid decisions that solve today's problem while creating tomorrow's bottleneck.
+
+Architecture should enable future growth without excessive rework.
