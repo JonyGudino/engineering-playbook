@@ -171,7 +171,7 @@ Avoid using hotfixes for unfinished work.
 
 # Release Strategy
 
-Releases are managed through Git Tags.
+Releases are managed through Semantic Versioning and Git Tags.
 
 Format:
 
@@ -183,15 +183,26 @@ v1.0.0
 v1.2.0
 v1.2.5
 
+Pre-release environments may use suffixes:
+
+v1.0.0-qa
+v1.2.0-qa
+
 Guidelines:
 
 - MAJOR for breaking changes
 - MINOR for new features
 - PATCH for bug fixes
 
-Every production deployment should be associated with a Git Tag.
+Environment deployments should be triggered from Git Tags.
 
-Tags represent the official release history.
+Examples:
+
+v1.2.0-qa -> QA Deployment
+
+v1.2.0 -> Production Deployment
+
+Tags represent the official release history and deployment traceability.
 
 
 # AI Requirements
