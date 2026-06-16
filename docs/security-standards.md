@@ -5,29 +5,33 @@
 
 3. Secure by Design
 
-4. Authentication Standards
+4. Threat Modeling Principles
 
-5. Authorization Standards
+5. Authentication Standards
 
-6. Secrets Management
+6. Authorization Standards
 
-7. Data Protection
+7. Secrets Management
 
-8. API Security
+8. Data Protection
 
-9. Application Security
+9. API Security
 
-10. Infrastructure Security
+10. Application Security
 
-11. Device & IoT Security
+11. Infrastructure Security
 
-12. Supply Chain Security
+12. Device & IoT Security
 
-13. Auditability
+13. Supply Chain Security
 
-14. Incident Response Principles
+14. Auditability
 
-15. AI Requirements
+15. Compliance Considerations
+
+16. Incident Response Principles
+
+17. AI Requirements
  -->
 
 # Purpose
@@ -88,6 +92,31 @@ Every design should consider:
 - Attack surfaces
 - Failure scenarios
 - Abuse scenarios
+
+
+# Threat Modeling Principles
+
+Security risks should be identified before implementation.
+
+Threat modeling should be performed for:
+
+- New systems
+- Major architectural changes
+- Sensitive business processes
+- External integrations
+- Device communication workflows
+
+Evaluate:
+
+- Attack surfaces
+- Trust boundaries
+- Abuse scenarios
+- Failure scenarios
+- Data exposure risks
+
+Security controls should address identified threats.
+
+Threat modeling should be proportional to system risk.
 
 
 # Authentication Standards
@@ -253,6 +282,23 @@ Systems should provide audit records for:
 Audit records should be protected from unauthorized modification.
 
 
+# Compliance Considerations
+
+Systems should be designed to support applicable legal, regulatory and organizational requirements.
+
+Consider:
+
+- Data protection requirements
+- Audit requirements
+- Retention requirements
+- Access control requirements
+- Industry-specific obligations
+
+Compliance requirements should be identified early and incorporated into system design.
+
+Compliance should be treated as a design requirement, not as a post-implementation activity.
+
+
 # Incident Response Principles
 
 Security incidents should be assumed possible.
@@ -278,6 +324,8 @@ When proposing solutions, always evaluate:
 - API security implications
 - Infrastructure security implications
 - Device security implications
+- Threat modeling requirements
+- Compliance implications
 - Auditability requirements
 
 Identify potential security risks.
