@@ -19,9 +19,11 @@
 
 10. Observability Principles
 
-11. Evolution Principles
+11. Operational Excellence Principles
 
-12. AI Requirements
+12. Evolution Principles
+
+13. AI Requirements
  -->
 
 # Purpose
@@ -148,6 +150,9 @@ Systems should support:
 - Timeouts
 - Graceful degradation
 - Recovery strategies
+- Idempotency
+- Circuit breaking
+- Failure isolation
 
 Failures should be expected and managed.
 
@@ -196,6 +201,25 @@ Failures should be detectable.
 Unknown failures are unacceptable.
 
 
+# Operational Excellence Principles
+
+Systems should be designed to be operated efficiently.
+
+Consider:
+
+* Monitoring
+* Alerting
+* Deployment strategies
+* Rollback mechanisms
+* Disaster recovery
+* Capacity planning
+* Incident response
+
+Operational requirements must be considered during design, not after deployment.
+
+A system that cannot be operated effectively is not production-ready.
+
+
 # Evolution Principles
 
 Architectures should support evolution.
@@ -227,5 +251,8 @@ Always evaluate:
 - Security implications
 - Observability requirements
 - Evolution impact
+- Operational impact
+- Recovery strategies
+- Resilience requirements
 
 Design systems, not isolated features.
