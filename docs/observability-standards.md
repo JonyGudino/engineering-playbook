@@ -21,7 +21,11 @@
 
 11. Business Observability
 
-12. AI Requirements
+12. Correlation Principles
+
+13. Reliability Objectives
+
+14. AI Requirements
  -->
 
 # Purpose
@@ -197,6 +201,43 @@ Measure:
 - Service adoption
 
 Business observability connects technical performance with business outcomes.
+
+
+# Correlation Principles
+
+Operational telemetry should be correlated across systems whenever possible.
+
+Telemetry should support tracing events across:
+
+- Services
+- Devices
+- Queues
+- External integrations
+
+Prefer:
+
+- Correlation IDs
+- Request IDs
+- Device IDs
+- Transaction IDs
+
+Correlation improves incident investigation and root cause analysis.
+
+
+# Reliability Objectives
+
+Critical services should define measurable reliability objectives.
+
+Examples include:
+
+- Availability targets
+- Response time targets
+- Processing time targets
+- Recovery targets
+
+Reliability objectives should align with business expectations.
+
+What is not measured cannot be improved.
 
 
 # AI Requirements
