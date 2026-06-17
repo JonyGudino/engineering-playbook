@@ -5,29 +5,33 @@
 
 3. Account Strategy
 
-4. Identity & Access Management
+4. Platform Ownership
 
-5. Infrastructure as Code
+5. Identity & Access Management
 
-6. Network Design Principles
+6. Infrastructure as Code
 
-7. Secrets Management
+7. Network Design Principles
 
-8. Compute Standards
+8. Edge & CDN Principles
 
-9. Data & Storage Standards
+9. Secrets Management
 
-10. Observability Standards
+10. Compute Standards
 
-11. Cost Management Principles
+11. Data & Storage Standards
 
-12. Resilience & Disaster Recovery
+12. Observability Standards
 
-13. Deployment Standards
+12. Cost Management Principles
 
-14. Security Governance
+13. Resilience & Disaster Recovery
 
-15. AI Requirements
+14. Deployment Standards
+
+15. Security Governance
+
+16. AI Requirements
  -->
 
 # Purpose
@@ -81,6 +85,23 @@ Access boundaries should be explicit.
 Production environments should receive additional protection and governance controls.
 
 
+# Platform Ownership
+
+Platform responsibilities should be clearly defined.
+
+Ownership includes:
+
+- Infrastructure
+- Networking
+- Security controls
+- CI/CD platforms
+- Shared operational tooling
+
+Platform standards should provide consistency across all systems.
+
+Shared platform components should be treated as products.
+
+
 # Identity & Access Management
 
 Apply the Principle of Least Privilege.
@@ -128,6 +149,28 @@ Apply:
 Public exposure should be justified and documented.
 
 Private communication should be preferred whenever possible.
+
+
+# Edge & CDN Principles
+
+Edge services should improve:
+
+- Performance
+- Availability
+- Security
+- Traffic management
+
+Edge capabilities may include:
+
+- CDN
+- DNS
+- WAF
+- DDoS protection
+- Edge caching
+
+Edge configurations should remain consistent, auditable and documented.
+
+Edge services should complement application architecture, not replace it.
 
 
 # Secrets Management
