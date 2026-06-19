@@ -11,27 +11,33 @@
 
 6. Service Boundaries
 
-7. API & Contract Standards
+7. Service Communication Patterns
 
-8. Data Ownership Standards
+8. API & Contract Standards
 
-9. Dependency Management
+9. Service Discoverability
 
-10. Reliability Standards
+10. Data Ownership Standards
 
-11. Failure Isolation Principles
+11. Dependency Management
 
-12. Observability Requirements
+12. Reliability Standards
 
-13. Security Requirements
+13. Failure Isolation Principles
 
-14. Versioning Principles
+14. Observability Requirements
 
-15. Deployment Requirements
+15. Security Requirements
 
-16. Service Lifecycle Management
+16. Versioning Principles
 
-17. AI Requirements -->
+17. Deployment Requirements
+
+18. Operational Readiness
+
+19. Service Lifecycle Management
+
+20. AI Requirements -->
 
 # Purpose
 
@@ -122,6 +128,28 @@ Avoid:
 Boundaries protect autonomy.
 
 
+# Service Communication Patterns
+
+Services should communicate through well-defined contracts.
+
+Communication mechanisms may include:
+
+- APIs
+- Events
+- Message Queues
+- WebSockets
+- Streaming Platforms
+
+Choose communication patterns based on:
+
+- Latency requirements
+- Reliability requirements
+- Coupling considerations
+- Scalability needs
+
+Communication choices should be intentional and documented.
+
+
 # API & Contract Standards
 
 Service contracts should be explicit and versionable.
@@ -138,6 +166,21 @@ Avoid:
 - Breaking changes without communication
 
 Contracts are part of the service.
+
+
+# Service Discoverability
+
+Services should be discoverable by engineering teams.
+
+Documentation should include:
+
+- Purpose
+- Ownership
+- Interfaces
+- Dependencies
+- Operational contacts
+
+Undocumented services increase operational risk.
 
 
 # Data Ownership Standards
@@ -252,6 +295,19 @@ Services should support:
 - Environment consistency
 
 Deployment processes should minimize operational risk.
+
+
+# Operational Readiness
+
+Before production deployment, services should demonstrate:
+
+- Monitoring coverage
+- Alerting coverage
+- Runbooks when appropriate
+- Recovery procedures
+- Security compliance
+
+Services should be operable before they are considered production-ready.
 
 
 # Service Lifecycle Management
